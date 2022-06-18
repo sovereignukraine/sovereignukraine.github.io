@@ -1,0 +1,262 @@
+/* Normalize---------------------------------------------------*/
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    
+ }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  body{
+      background-color: rgb(253, 237, 218);
+      margin: 0 auto;
+      padding: 0;
+      max-width: 1100px;
+      color: black;
+      font-family: 'Oxygen', sans-serif;
+
+  }
+
+  .border{
+    border: 2px solid black;
+    border-radius: 8px;
+  }
+
+  /* Header----------------------------------------------------*/
+  header{
+      background-color: rgb(253, 237, 218);
+      display: flex;
+      justify-content: space-between;
+      position: fixed;
+      z-index: 2;
+      width: 100%;
+  }
+
+  aside.name{
+    display: none;
+  }
+  
+  nav{
+      width: 100%;
+  }
+
+  ul{
+    padding: 0;
+  }
+
+  ul.menu{
+      display: flex;
+      justify-content: space-evenly;
+  }
+
+  ul.menu li{
+    list-style: none;
+  }
+
+  ul.menu li a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
+  }
+
+  ul.menu li a:hover{
+      text-decoration: underline;
+  }
+
+  @media only screen and (min-width: 800px){
+    
+    header {
+        max-width: 1100px;
+    }
+
+    aside.name{
+        display: block;
+        font-size: 3rem;
+        font-family: 'Permanent Marker', cursive;
+        padding-left: 50px;
+    }
+
+    ul.menu li{
+        padding-right: 30px;
+  }
+
+  nav{
+    width: auto;
+}
+}
+
+/* About Me-------------------------------------------------*/
+
+  .about-me {
+      width: 90%;
+      margin: 0 auto;
+      position: relative;
+  }
+
+  .about-me, .projects, .skills, footer{
+    position: relative;
+    top: 66px;
+  }
+
+  .photo-container{
+      width: 95%;
+      margin: 0 auto;
+  }
+
+  .photo-container img{
+    width: 100%;
+    border-radius: 15px;
+    padding: 5px;
+    margin-top: 10px;
+
+  }
+  
+ .info h2{
+     text-align: center;
+ }
+
+ .info p{
+     text-align: justify;
+     padding: 0 20px 0 20px;
+ }
+
+
+ @media only screen and (min-width: 800px){
+
+    .about-me, .projects, .skills, footer{
+        position: relative;
+        top: 76px;
+      }
+
+    .about-me{
+        display: flex;
+        width: 100%;
+    }
+
+    .about-me .photo-container{
+        width: 39%;
+        flex-grow: 0;
+    }
+
+    .about-me .info{
+       flex-grow: 3;
+        width: 59%;
+        height: 100%;
+    }
+
+    .info p{
+        font-size: 1.1rem;
+    }
+ }
+
+ /*Projects----------------------------------------------*/
+ .projects{
+    margin: 5px auto;
+    width: 90%;
+ }
+
+ .family_site h3, .magic h3, .treasure-island h3, .catch-me h3, #family{
+    cursor: pointer;
+ }
+
+.projects h3 {
+    padding-left: 25px;
+
+}
+
+
+ .arrow_expand{
+    background: transparent url(../photos/icons8-expand-arrow-24.png) left center no-repeat;
+}
+
+.arrow_collaps {
+    background: transparent url(../photos/icons8-collapse-arrow-24.png) left center no-repeat; 
+}
+
+.preview {
+   display: none;
+}
+
+.preview p{
+    margin: 20px 10px;
+    text-align: center;
+}
+.active {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.small {
+    height: 200px;
+    width: 200px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+.large {
+    height: 400px;
+    width: 400px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button {
+    width: 200px;
+    height: 2rem;
+    border: 2px solid black;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: bisque;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+button a {
+    text-decoration: none;
+    color: black;
+}
+button:hover {
+    background-color: rgb(254, 204, 142);
+}
+
+
+@media only screen and (min-width: 800px){
+    .projects {
+        width: 100%;
+    }
+}
+
+/*Skills------------------------------*/
+
+.skills {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.skills img {
+    margin: 20px 0 20px 0;
+}
+
+
+
+@media only screen and (min-width: 800px){
+    .skills {
+        width: 100%;
+    }
+}
+
+footer{
+    padding: 10px;
+    text-align: center;
+
+}

@@ -1,0 +1,68 @@
+body{
+    background: linear-gradient(rgb(42, 42, 126), rgb(0, 0, 27));
+    background-attachment: fixed;
+}
+
+h1{
+    color: aliceblue;
+    font-family: 'Righteous', cursive;
+    font-size: 50px;
+    text-align: center;
+}
+
+.ball{
+    height: 500px;
+    width: 500px;
+    background-image: url('../pages/magic_8_ball/pics/ball.png');
+    background-size: contain;
+    margin: 0 auto;
+}
+
+.answer{
+    height: 80px;
+    width: 100px;
+    position: relative;
+    top: 41%;
+    left: 40%;
+    color: aliceblue;
+    font-size: 1.4rem;
+    text-align: center;
+    font-family: 'Righteous', cursive;
+
+}
+
+#input, #button{
+    font-size: 1.2rem;
+    font-family: 'Righteous', cursive;
+    border: 3px solid rgb(71, 71, 224);
+    background-color: rgb(12, 12, 68);
+    color:aliceblue;
+}
+
+
+.input{
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+#input{
+    height: 2rem;
+    width: 30vw;
+    text-align: center;
+}
+
+#button{
+    height: 2.5rem;
+    width: 4rem;
+    margin-left: 5px;
+}   
+
+#button:hover{
+    background-color: rgb(25, 25, 128);
+}
+
+#button:active{
+    background-color: aliceblue;
+    color: rgb(23, 23, 126);
+}

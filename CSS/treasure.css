@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    background-image: url(../pages/Treasure/background.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container{
+    width: 600px;
+}
+
+h1, p{
+    text-align: center;
+    font-family: 'Skranji', cursive;
+    color:rgb(61, 41, 41)
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+p{
+    font-size: 1.5rem;
+}
+

@@ -1,0 +1,34 @@
+body{
+    background: linear-gradient(rgb(140, 228, 231), rgb(246, 246, 128));
+    background-attachment: fixed;
+    color: rgb(20, 20, 80);
+}
+
+.name, .rules{
+    position: relative;
+    left: 600px;
+}
+
+.name{
+    font-size: 2.5rem;
+    font-family: 'Indie Flower', cursive;
+}
+
+.rules li{
+    list-style: url('pics/icons8-right-16.png');
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.5rem;
+}
+
+h1{
+    font-family: 'Radio Canada', sans-serif;
+    cursor: default;
+}
+
+@media only screen and (max-width: 800px){
+    .name, .rules{
+        position: relative;
+        top: 400px;
+        left: 10px;
+    }
+}
