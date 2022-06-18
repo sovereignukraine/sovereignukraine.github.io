@@ -200,8 +200,8 @@ html {
 }
 
 .large {
-    height: 400px;
-    width: 400px;
+    height: auto;
+    width: 80vw;
     border-radius: 8px;
     cursor: pointer;
 }
@@ -232,6 +232,12 @@ button:hover {
     .projects {
         width: 100%;
     }
+
+    .large {
+        height: 800px;
+        width: 800px;
+        
+    }
 }
 
 /*Skills------------------------------*/
@@ -245,6 +251,7 @@ button:hover {
 
 .skills img {
     margin: 20px 0 20px 0;
+    max-width: 18%;
 }
 
 
@@ -253,6 +260,8 @@ button:hover {
     .skills {
         width: 100%;
     }
+
+  
 }
 
 footer{
